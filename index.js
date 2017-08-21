@@ -7,6 +7,17 @@ app.get('/', function (req, res) {
   res.send('1762109626')
 })
 
+app.get('/webhook', function(req, res) {
+  if (req.query['hub.mode'] === 'subscribe' &&
+      req.query['hub.verify_token'] === 'fl_secret') {
+    console.log("Validating webhook");
+    res.status(200).send(req.query['hub.challenge']);
+  } else {
+    console.error("Failed validation. Make sure the validation tokens match.");
+    res.sendStatus(403);          
+  }  
+});
+
 app.listen(port, function () {
   console.log('Example app listening on port !' +port)
 })
