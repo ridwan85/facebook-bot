@@ -1,0 +1,23 @@
+{
+  "name": "fb_bot",
+  "version": "1.0.0",
+  "description": "saje test2",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzriZzz/fb_test.git"
+  },
+  "author": "azri wan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AzriZzz/fb_test/issues"
+  },
+  "homepage": "https://github.com/AzriZzz/fb_test#readme"
+}
