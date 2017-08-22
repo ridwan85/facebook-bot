@@ -1,6 +1,13 @@
 var express = require('express')
 var app = express()
 var port = process.env.PORT || 3000; 
+var bodyParser = require('body-parser')
+
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: false }))
+ 
+// parse application/json 
+app.use(bodyParser.json())
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
