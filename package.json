@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AzriZzz/fb_test.git"
+    "url": "git+https://github.com/ridwan85/facebook-bot"
   },
   "author": "azri wan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AzriZzz/fb_test/issues"
+    "url": "https://github.com/ridwan85/facebook-bot/issues"
   },
-  "homepage": "https://github.com/AzriZzz/fb_test#readme"
+  "homepage": "https://github.com/ridwan85/facebook-bot#readme"
 }
