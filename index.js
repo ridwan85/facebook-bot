@@ -90,12 +90,20 @@ function receivedMessage(event) {
 }
 
 function sendTextMessage(recipientId, messageText) {
+  var messageRespond;
+
+  if (messageText == "Salam" ||  messageText == "Assalamualaikum" || messageText == "Smekom") {
+    messageRespond = "Waalaikumsalam"
+  }  
+  else {
+    messageRespond = "Good Morning"
+  }
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      text: "Dapatkan produk kami dengan serendah RM2500 tanpa GST"
+      text: messageRespond
     }
   };
 
