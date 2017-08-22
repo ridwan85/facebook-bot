@@ -90,14 +90,19 @@ function receivedMessage(event) {
 }
 
 function sendTextMessage(recipientId, messageText) {
+  // create one variable to hold message response
   var messageRespond;
 
+  //example logic to respond with user sent text
   if (messageText == "Salam" ||  messageText == "Assalamualaikum" || messageText == "Smekom") {
     messageRespond = "Waalaikumsalam"
   }  
   else {
     messageRespond = "Good Morning"
   }
+  // can be extend to be use with ai
+
+  // message data to send back to the user
   var messageData = {
     recipient: {
       id: recipientId
