@@ -95,7 +95,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: messageText
+      text: "Dapatkan produk kami dengan serendah RM2500 tanpa GST"
     }
   };
 
